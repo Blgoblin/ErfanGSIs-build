@@ -3,16 +3,8 @@ name: ErfanGSIs-build-Aonly
 on: 
   workflow_dispatch:
     inputs:
-      ROM_URL:
-        description: 'ROM_URL'
-        required: true
-      ROM_TYPE:
-        description: 'ROM_TYPE'
-        required: true
-      RELEASE_NAME:
-        description: 'RELEASE_NAME'
-        required: true
-
+      ROM_URL: https://firmware.meizu.com/Firmware/Flyme/M3E/8.0.5.0/cn/20210616171821/4baf5263/update.zip
+      ROM_TYPE: Flyme
 jobs:
   build:
     runs-on: ubuntu-20.04
